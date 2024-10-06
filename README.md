@@ -151,7 +151,7 @@ while true; do
     sleep 600
 done
 ```
-
+## Scriptin servis kodu
 ```
 nano /etc/systemd/system/flockd-updater.service
 ```
@@ -175,21 +175,22 @@ TimeoutStopSec=30
 [Install]
 WantedBy=multi-user.target
 ```
+İzinleri verip başlatalım.
 ```
 sudo chmod +x /root/flockd_update.sh
 sudo systemctl daemon-reload
 sudo systemctl enable flockd-updater
 sudo systemctl start flockd-updater
 ```
-Scriptte hata varsa tespit logu👇
- ```
-sudo tail -f /var/log/flockd-updater-error.log -n 100
- ```
 Tüm detayıyla log👇
  ```
 sudo tail -f /var/log/flockd-updater.log -n 100
  ```
-Log boyutu kontrolü için öneriyorum
+Scriptte hata varsa tespit logu👇
+ ```
+sudo tail -f /var/log/flockd-updater-error.log -n 100
+ ```
+## Log boyutu kontrolü için yapılmasını öneriyorum
  ```
 sudo nano /etc/logrotate.d/flockd-updater
  ```
