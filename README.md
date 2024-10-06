@@ -151,7 +151,9 @@ while true; do
 done
 ```
 
- ```nano /etc/systemd/system/flockd-updater.service```
+```
+nano /etc/systemd/system/flockd-updater.service
+```
 
 aşağıdakini direkt yapıştırıp kaydedip çıkın
  ```
