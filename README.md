@@ -9,7 +9,7 @@ source ~/.bashrc
 cd llm-loss-validator
 conda activate llm-loss-validator
 ```
-Alttaki zorunlu servis yapmak için :D
+Alttaki zorunlu servis yapmak için :D ( Alttaki servis kodunda (HUGGING KEY-FLOCK API-TASK ID) editlenecek yerler var. Atlamayın!)
 ```
 sudo tee /etc/systemd/system/flockd.service > /dev/null << EOF
 [Unit]
