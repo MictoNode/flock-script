@@ -1,8 +1,8 @@
 # Flock Script
 ## Flock'u servise çevirme
 İlk önce eğer screen ile çalıştırıyorsanız servisli çalıştırmaya döndürmeniz gerekiyor. Screen'e girip `CTRL + C` ile durdurun ve `exit` yazarak screen'i kapatın.
-
-alttaki kod opsiyonel garanti olsun diye attım
+[Validator](https://github.com/Core-Node-Team/Flock.io/blob/main/Validator.md)'u oluşturdunuz ve en sondaki servis komutuyla çalıştırıyorsanız bu servis oluşturmayı es geçin.
+Alttaki kod opsiyonel garanti olsun diye attım
 
     cd
     source ~/.bashrc
